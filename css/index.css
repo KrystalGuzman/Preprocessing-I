@@ -1,1 +1,250 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(fontawesome-all.min.css);
+@font-face {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gelasio Regular'), local('Gelasio-Regular'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf9MaFfvUQxTTqS9C6hZA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lilita One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lilita One'), local('LilitaOne'), url(https://fonts.gstatic.com/s/lilitaone/v7/i7dPIFZ9Zz-WBtRtedDbYEF8QA.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexrow {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+html,
+body {
+  height: 100%;
+  max-width: 90%;
+  font-family: 'Gelasio', serif;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lilita One', cursive;
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+table#history {
+  width: 80%;
+  background-color: #f1f1c1;
+}
+table#history tr:nth-child(even) {
+  background-color: #eee;
+  padding: 2%;
+}
+table#history tr:nth-child(odd) {
+  background-color: #fff;
+  padding: 2%;
+}
+table#history th {
+  color: white;
+  background-color: black;
+  padding: 2%;
+}
+img {
+  max-width: 25%;
+  height: auto;
+}
+a {
+  color: gray;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav a {
+    text-align: center;
+    border-bottom: 1px dashed black;
+  }
+}
+.title {
+  text-align: center;
+  background-color: darkgray;
+}
+.title h1 {
+  font-size: 2rem;
+}
+.title h2 {
+  font-size: 1.5rem;
+}
+.midcontainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+.midcontainer .container #about,
+.midcontainer .container #skills {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .midcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.copyright {
+  text-align: center;
+}
+#portfolio {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 
+@import url(fontawesome-all.min.css);
+@import url('https://fonts.googleapis.com/css?family=Gelasio|Lilita+One&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +56,103 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+
+@main-color: gray;
+@main-font: 'Gelasio', serif;
+@secondary-font: 'Lilita One', cursive;
+
+.flexcolumn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.flexrow{
+	display:flex;
+	justify-content: space-around;
+	padding: 5%;
 }
 
+
+html, body {
+	height: 100%;
+	max-width: 90%;
+	font-family: @main-font;
+	margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: @secondary-font;
+	margin-bottom: 1.5rem;
+}
+p{
+	margin-bottom: 1.5rem;
+}
+table#history{
+	width: 80%;
+	background-color: #f1f1c1;
+	tr:nth-child(even){
+		background-color: #eee;
+		padding: 2%;
+	}
+	tr:nth-child(odd){
+		background-color: #fff;
+		padding: 2%;
+	}
+	th{
+		color:white;
+		background-color: black;
+		padding: 2%;
+	}
+}
+img{
+	max-width: 25%;
+	height:auto;
+}
+a{
+	color: @main-color;
+	text-decoration: none;
+}
+
+nav{
+	.flexrow;
+	@media (max-width: 500px){
+		.flexcolumn;
+		
+		a{
+			text-align:center;
+			border-bottom: 1px dashed black;
+		}
+	}
+}
+.title{
+	text-align: center;
+	background-color: darkgray;
+	h1{
+		font-size: 2rem;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+}
+
+.midcontainer{
+	.flexrow;
+	.container #about,.container #skills {
+		text-align: center;
+	}
+	@media (max-width: 500px){
+	 .flexcolumn;
+	}
+}
+
+.copyright {
+	text-align: center;
+}
+#portfolio{
+	display:flex;
+	justify-content: space-evenly;
+
+}
+@media (max-width: 500px){
+
+}
